@@ -20,6 +20,14 @@ echo "Building ESDM uncontoured Carto style..."
 carto esdm-uncontoured.mml >esdm-uncontoured.xml
 [ $? != 0 ] && exit 1
 
+echo "Building ESDM 27700 contoured Carto style..."
+carto esdm-27700-contoured.mml >esdm-27700-contoured.xml
+[ $? != 0 ] && exit 1
+
+echo "Building ESDM 27700 uncontoured Carto style..."
+carto esdm-27700-uncontoured.mml >esdm-27700-uncontoured.xml
+[ $? != 0 ] && exit 1
+
 echo "Building OSM default Carto style..."
 carto project.mml >project.xml
 [ $? != 0 ] && exit 1
