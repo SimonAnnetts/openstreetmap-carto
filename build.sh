@@ -1,0 +1,21 @@
+#!/bin/bash
+
+exec > >(awk '{print strftime("%Y-%m-%d %H:%M:%S [1] "),$0; fflush();}')
+exec 2> >(awk '{print strftime("%Y-%m-%d %H:%M:%S [2] "),$0; fflush();}' >&2)
+
+starttime=$(date +%s)
+
+echo "Building ESDM contoured Carto style..."
+carto esdm-contoured.mml >esdm-contoured.xml
+[ $? != 0 ] && exit 1
+
+echo "Building ESDM uncontoured Carto style..."
+carto esdm-uncontoured.mml >esdm-uncontoured.xml
+[ $? != 0 ] && exit 1
+
+echo "Building OSM default Carto style..."
+carto project.mml >project.xml
+[ $? != 0 ] && exit 1
+
+endtime=$(date +%s)
+echo "Done in $[${endtime}-${starttime}] seconds! All your Maps Belong to Us!"
