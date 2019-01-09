@@ -1,5 +1,5 @@
-*** /home/osm/openstreetmap-carto/esdm-uncontoured.mml	2018-12-05 19:59:28.918674800 +0000
---- /home/osm/openstreetmap-carto/esdm-contoured.mml	2018-12-05 19:58:43.922585500 +0000
+*** esdm-contoured.mml	2018-12-05 19:59:28.918674800 +0000
+--- esdm-contoured.mml	2018-12-05 19:58:43.922585500 +0000
 ***************
 *** 34,39 ****
 --- 34,59 ----
@@ -40,7 +40,7 @@
     - id: world
       geometry: polygon
 ***************
-*** 158,163 ****
+*** 163,168 ****
 --- 179,296 ----
           ) AS features
       properties:

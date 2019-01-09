@@ -1,5 +1,5 @@
-*** /home/osm/openstreetmap-carto/project.mml	2018-12-05 19:56:55.717147673 +0000
---- /home/osm/openstreetmap-carto/esdm-uncontoured.mml	2018-12-05 19:59:28.918674800 +0000
+*** esdm-uncontoured.mml	2018-12-05 19:56:55.717147673 +0000
+--- esdm-uncontoured.mml	2018-12-05 19:59:28.918674800 +0000
 ***************
 *** 1,7 ****
   scale: 1

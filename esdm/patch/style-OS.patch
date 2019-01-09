@@ -1,5 +1,5 @@
-*** /home/osm/openstreetmap-carto/style.mss	2018-11-21 16:11:09.557605579 +0000
---- /home/osm/openstreetmap-carto/esdm/style-OS.mss	2018-11-07 17:40:01.448610148 +0000
+*** esdm/style-OS.mss	2018-11-21 16:11:09.557605579 +0000
+--- esdm/style-OS.mss	2018-11-07 17:40:01.448610148 +0000
 ***************
 *** 3,9 ****
   }
